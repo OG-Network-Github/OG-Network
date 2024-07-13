@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+
+    color: white;
+  }
+  ::selection{
+    color: white;
+    background-color: rgba(114, 54, 198, 0.957);
+  }
+  main {
+    background-image: url("../../assets/image/bg.png");
+    filter: opacity(100%);
+    background-size: max(1820px, 100vw);
+    height: 100vh;
+    object-fit: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+
+header {
+    z-index: 10;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    gap: 10px;
+    font-size: large;
+  }
+  .mid ul {
+    display: flex;
+  }
+  .mid ul li {
+    list-style: none;
+  }
+  header .mid ul a {
+    margin-right: 10px;
+    font-size: 13px;
+    font-family: "Baloo Paaji 2", sans-serif;
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+  }
+  header .right input {
+    padding: 0 13px;
+    font-family: "Baloo Paaji 2", sans-serif;
+    background-color: transparent;
+    border: 0.5px solid rgba(163, 163, 163, 0.664);
+    border-radius: 15px;
+    color: white;
+  }
+  .header{
+    padding: 100px;
+  }
+  

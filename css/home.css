@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+::selection{
+  color: white;
+  background-color: rgba(114, 54, 198, 0.957);
+}
+main {
+  background-image: url("../../assets/image/realbg.png");
+  filter: opacity(100%);
+  background-size: max(1820px, 100vw);
+  height: 100vh;
+  object-fit: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header {
+  z-index: 10;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  gap: 10px;
+  font-size: large;
+}
+.mid ul {
+  display: flex;
+}
+.mid ul li {
+  list-style: none;
+}
+header .mid ul a {
+  margin-right: 10px;
+  font-size: 13px;
+  font-family: "Baloo Paaji 2", sans-serif;
+  text-decoration: none;
+  color: rgb(129, 129, 129);
+}
+header .right input {
+  padding: 0 13px;
+  font-family: "Baloo Paaji 2", sans-serif;
+  background-color: transparent;
+  border: 0.5px solid rgba(163, 163, 163, 0.664);
+  border-radius: 15px;
+  color: white;
+}
+
+.divider {
+  height: 3px;
+  background: rgb(0, 12, 186);
+  background: linear-gradient(
+    90deg,
+    rgb(84, 0, 186) 0%,
+    rgb(105, 79, 127) 100%
+  );
+}
+footer {
+  color: white;
+  height: 600px;
+  background: rgb(23, 23, 23);
+  background: linear-gradient(90deg, rgb(33, 33, 33) 0%, rgb(1, 1, 1) 100%);
+}
+.ques {
+  padding-top: 100px;
+  margin: auto;
+  width: 1000px;
+  font-family: "Baloo Da 2", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ques h4 {
+  text-decoration: underline;
+}
+.ques h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ques p {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.sub {
+  width: 230px;
+}
+#email {
+  width: 88%;
+  height: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  color: rgba(114, 54, 198, 0.957);
+  font-weight: 700;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 7px;
+}
+/* Add a parent class or use a more specific selector */
+.sub #email:focus {
+  border: 1px solid rgb(3, 187, 215);
+  box-shadow: 0px 0px 4px 4px rgba(114, 54, 198, 0.957);
+}
+.ques input[type="button"] {
+  font-weight: 600;
+  margin-top: 10px;
+  padding-top: 6px;
+  color: white;
+  width: 98%;
+  height: 37px;
+  border-radius: 6px;
+  border: none;
+  /* background-color: rgb(3, 187, 215); */
+  background: rgba(114, 54, 198, 0.957);
+  cursor: pointer;
+
+}
+.ques input[type="button"]:hover { 
+   transition: background-image 2s ease-in-out;
+  /* background-color: rgb(2, 139, 160); */
+  background: rgb(203,167,255);
+  background: linear-gradient(90deg, rgba(114, 54, 198, 0.957) 1%, rgba(94, 47, 161, 0.957) 50%, rgb(64, 22, 110) 100%);
+}
+.credits {
+  margin: 50px auto;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.credits h5 {
+  color: rgb(169, 169, 169);
+  font-family: "Baloo Da 2", sans-serif;
+  font-weight: 300;
+}
+.links {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+.links a img {
+  width: 25px;
+}
+.links a{
+  width: 25px;
+   margin: 5px;
+}
+.links :hover{
+  opacity: 70%;
+}
+.links a img:active{
+  transition: all 200ms;
+  position: absolute;
+  transform-origin: center;
+  transform: rotateZ(10deg);
+  z-index: 10;
+  opacity: 60%;
+  width: 28px;
+}
+
+@media (max-width: 1220px) {
+  footer {
+    height: auto;
+  }
+  .ques {
+    padding-top: 0px;
+    width: auto;
+    margin:0px 40px;
+    font-family: "Baloo Da 2", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .credits {
+    width: auto;
+    margin: 50px 40px ;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .links {
+    justify-self: start;
+  }
+  .q {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 617px) {
+  header {
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+  .logo::after {
+    content: "☰";
+    position: fixed;
+    right: 40px;
+  }
+  .right {
+    position: absolute;
+    top: 160px;
+    right: -10px;
+  }
+  .right input {
+    font-size: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0px;
+    border: none;
+  }
+  .mid {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+  }
+  .mid ul {
+    display: block;
+  }
+  .mid ul li a {
+    font-size: 0;
+  }
+
+  .logo::after:hover {
+    .right {
+      position: absolute;
+      top: 160px;
+      right: 100px;
+    }
+    .right input {
+      font-size: 10px;
+      color: red;
+    }
+    .mid {
+      position: absolute;
+      top: 60px;
+      right: 100px;
+    }
+    .mid ul {
+      display: block;
+    }
+  }
+  .ques {
+    margin-left: 40px;
+    font-family: "Baloo Da 2", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* main */
+.main{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  font-family: "Baloo Paaji 2", sans-serif;
+  margin-left: 170px; 
+}
+
+.title h1{
+  text-align: center; 
+  color: azure;
+  font-size:2.5em;
+  position: relative;
+  z-index: 11;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.title h2{
+  font-weight: 300;
+  text-align: center; 
+  color: rgba(154, 154, 154, 0.589);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.title a{
+  width: auto;
+  height: auto;
+}
+.title input {
+  margin: 20px 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: 200;
+  background: transparent;
+  border: 2px solid rgba(67, 0, 105, 0.646); /* Set the border to be transparent */
+  border-radius: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.title input:active{
+  background: linear-gradient(90deg, rgba(34,0,126,1) 0%, rgba(137,0,255,1) 100%);
+  border: 2px solid black;
+}
+
+.image{
+  /* position */
+  align-self: flex-end;
+  /* width: 600px;
+  height: 400px; */
+  width: max(40vw, 600px);
+  height: min(50vh, 400px);
+  /* bg */
+  background-image: url("../../assets/image/imager.png");
+  filter: hue-rotate(240deg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 1220px) {
+  .main{
+      flex-direction: column;
+  }
+  .title{
+      text-align: center;
+      margin: auto;
+  }
+  .image{
+      align-self: center;
+      width: 800px;
+  }
+}
+
+
+@media (max-width: 617px){
+  .title{
+      width: 90%;
+  }
+
+}

@@ -1,0 +1,76 @@
+.error{
+    position: absolute;
+    top: -10000px;
+    z-index: 100;
+}
+
+@media (max-width: 1439px) {
+    *{
+        font-family: "Baloo Paaji 2", sans-serif;
+    }
+  body {
+    background-image: url("../../assets/image/bg.png");
+    background-size: max(1820px, 100vw);
+    height: 100vh;
+    object-fit: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  main {
+    position: relative;
+    top: -10000px;
+  }
+  header {
+    position: relative;
+    top: -10000px;
+  }
+
+  .error {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: absolute;
+    z-index: 100;
+  }
+  .error_img {
+    margin: 20px;
+    border-radius: 13px;
+    width: 300px;
+    height: 240px;
+    /* background-color:  rgba(137, 98, 201, 0.753); */
+    background: rgb(131, 86, 205);
+    background: linear-gradient(
+      180deg,
+      rgba(131, 86, 205, 1) 0%,
+      rgba(95, 63, 147, 1) 100%
+    );
+  }
+  .error_img img {
+    margin: 20px 50px;
+    width: 200px;
+  }
+  .error_desc {
+    margin: 20px;
+    text-align: center;
+    width: 350px;
+  }
+  .error_desc h2 {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .error a{
+    position: relative;
+    top: 20px;
+    padding: 1px 15px;
+    background-color: rgb(131,86,205);
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .error a:active{
+    background: linear-gradient(90deg,rgba(132, 86, 205, 0.755) 0%, rgb(52, 6, 121) 100%);
+  }
+}
