@@ -1,0 +1,67 @@
+.error{
+    margin:20px auto;
+    padding:5px 0px ;
+    width: 310px;
+    background-color: var(--error-bg);
+    border-radius: 8px;
+    border: 2px solid var(--error-border);
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 20px 3px var(--error-bg);
+    overflow: hidden;
+    transition: all 300ms ease-in;
+}
+.error svg{
+    scale: 1.4;
+    margin: 20px 25px;
+    padding: 5px;
+    background-color: var(--svg-bg);
+    border-radius: 10px;
+}
+.text h2{
+  margin: 0px;
+  font-family: "Poppins";
+  color: var(--error-text);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+}
+.text h4{
+    margin: 0px;
+    font-family: "Poppins";
+    color: var(--error-text);
+    font-weight: 500;
+    font-size: 13px;
+  }
+.hidden{
+    transform: translateY(-10px);
+    opacity: 0%;
+}
+.binary-error{
+  position: relative;
+  z-index: 10;
+  bottom: 110px;
+  margin:20px auto;
+  padding:5px 0px ;
+  width: 310px;
+  background-color: var(--error-bg);
+  border-radius: 8px;
+  border: 2px solid var(--error-border);
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 20px 3px var(--error-bg);
+  overflow: hidden;
+  transition: all 300ms ease-in;
+}
+.binary-error svg{
+  width: 30px;
+  scale: 1.5;
+  margin: 20px 20px;
+  padding: 5px;
+  background-color: var(--svg-bg);
+  border-radius: 10px;
+}
+.binary-error h4{
+  margin-top: 5px;
+  line-height: 15px;
+}

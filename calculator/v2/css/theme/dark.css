@@ -1,0 +1,57 @@
+
+  /* dark */
+:root {
+    /* no change */
+    --body-bg:rgb(45, 45, 45);
+    --border-color-light: rgba(0, 0, 0, 0.203);
+    --box-shadow-dark: rgba(0, 0, 0, 0.376);
+    --side-border: rgba(255, 0, 0, 0.099);
+    --side-box-shadow: rgba(69, 69, 69, 0.1);
+    --about-link: rgb(0, 140, 254);
+    --shown-box-link: rgb(1, 106, 176);
+    --box-border: rgb(24, 24, 24);
+
+    /* change */
+    --bg-color: rgb(27, 27, 27);
+    --white-bg: rgb(48, 48, 48);
+    
+    /* hover */
+    --settings-hover-bg: rgba(119, 119, 119, 0.24);
+    /* text */
+    --divider-bg: rgba(84, 84, 84, 0.222);
+    --text-color-dark: rgb(166, 166, 166);
+    --settings-text: rgb(180, 180, 180);
+    --settings-section-text: rgb(202, 202, 202);
+    --box-text-dark: rgb(216, 216, 216);
+    --box-text-light: rgb(144, 144, 144);
+    
+    
+    --shown-box-bg: rgb(45, 45, 45);
+    
+    --box-hover-bg: rgb(41, 41, 41);
+    --radio-bg: rgb(247, 247, 247);
+
+    --theme-selected:rgb(156, 44, 0);
+  }
+  :root  {
+    --white: rgba(79, 79, 79, 0.533);
+    --light-grey: rgba(88, 88, 88, 0.045);
+    --shadow-grey: rgba(0, 0, 0, 0.206);
+    --btn-hover-bg: rgba(74, 74, 74, 0.746);
+    --solve-bg: rgb(24, 77, 138);
+    --solve-hover-bg: rgb(23, 51, 83);
+    color: white; 
+  }
+  svg, img {
+    filter: invert(1);
+  }
+  :root{
+    --error-bg:rgba(255, 149, 49, 0.494);
+    --error-border:rgb(255, 176, 49);
+    --svg-bg:rgba(255, 187, 0, 0.683);
+    --error-text:rgb(255, 183, 0);
+    --scroll-bg:rgb(38, 38, 38);
+  }
+  .error svg{
+    filter: invert(0);
+  }
