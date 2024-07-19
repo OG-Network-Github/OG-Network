@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paid and Free Workshop - Home </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="hero-bg"><img src="assets/images/hero-bg-bottom 1.png" alt=""></div>
+        <div class="moon flex"><img src="assets/images/Ellipse 529.png" alt="" ></div>
+        <div class="moss"><img src="assets/images/moss.png" alt=""></div>
+        <nav>
+            <div class="right flex">
+             <img  src="assets/images/logo.png" alt="logo">
+             <h1> Pixel Perfect</h1>
+            </div>
+            <div class="left flex">
+                <ul class="flex">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Service</a></li>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">Contact</a></li>
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </nav>
+        <header>
+            <div class="head">
+                <h1><p>WE </p> ARE HERE TO BE YOUR ASSISTANT</h1>
+            
+            <h6>We are ready to convert your dream <p>Discord </p> server into reality.</h6>
+            <button>Join Discord</button>
+            <div class="container flex">
+               <div class="box flex"><img src="assets/images/dicord.png" alt=""> <h3> <p>200</p> online</h3></div>
+               <div class="box flex"><img src="assets/images/review.png" alt=""><h3> <p>5</p> stars</h3></div>
+               <div class="box flex"><img src="assets/images/customer.png" alt=""><h3> <p>100+</p> clients</h3></div>
+            <script>const container = document.querySelector('.container');
+                const parent = container.parentElement; // Assuming the direct parent is scrollable
+                
+                const observer = new IntersectionObserver(entries => {
+                  entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      container.style.opacity = '1';
+                      container.style.transform = 'translateX(0)';
+
+                    } else {
+                      container.style.opacity = '0';  
+                      container.style.transform = 'translateX(-100px)';
+                    }
+                  });
+                }, { threshold: 0 }); // Observe any visibility change
+                
+                observer.observe(parent);
+                </script>
+            <!-- </div> -->
+            </div>
+        </header>
+        <div class="class"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

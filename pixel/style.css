@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+main {
+  overflow: hidden;
+  position: relative;
+  /* min-height: 756px; */
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  /* background-image: url("assets/images/Rectangle\ 1.png"); */
+  background-color: black;
+  z-index: 1;
+}
+
+.hero-bg {
+  width: 100%;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  z-index: 2;
+}
+.hero-bg img{
+  width: 100%;
+}
+.moon{
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    left: 50%;
+    filter: blur(20%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgba(238, 126, 176, 0.8);
+    transform: translateX(100px);
+}
+.moss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    right: 100px;
+    position: absolute;
+    z-index: 1;
+    @media (max-width:1300px) {
+      right:40px;
+    }
+}
+.moss img{
+  height:460px;
+  width: 470px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 1271px;
+  margin: auto;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+nav svg{
+  display: none;
+}
+.right img {
+  height: 35px;
+  width: 35px;
+  filter: hue-rotate(120deg) brightness(350%);
+}
+.right h1 {
+  font-family: "Playwrite HR", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(245, 155, 200);
+}
+.left {
+  padding-right: 200px;
+}
+.left a {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.left ul {
+  gap: 30px;
+}
+ul li {
+  list-style: none;
+}
+header{
+  display: flex;
+    height: calc(100vh - 55px);
+    /* min-height: 756px; */
+    margin: auto;
+    width: 1271px;
+    font-size: 18px; 
+    color: white;
+    position: relative;
+    z-index: 4;
+}
+.head{
+   margin-left: 40px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+header h1{
+    text-align: left;
+    line-height: 60px;
+    color: white;
+    font-weight: 400;
+    gap: 10px;
+    letter-spacing: 4px;
+}
+header h1 p, header h6 p {
+  display: inline-block;
+}
+header h6{
+    
+    letter-spacing: 1px;
+    gap: 3px;
+    margin-top: 10px;
+}
+header p{
+    color: rgb(238, 126, 176);
+}
+header button{
+    align-self: flex-start;
+    margin:20px 10px ;
+    padding:5px 10px ;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(244, 107, 144);
+}
+.container{
+    position: absolute;
+    bottom: 60px;
+    transition: all 500ms ease-in-out 500ms;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(238, 126, 176);
+    margin: 10px;
+    border-radius: 12px;
+    flex-direction: column;
+    color: black;
+    gap: 10px;
+}
+.box img{
+    width: 50px;
+}
+.box p{
+    font-size: 14px;
+    color: white;
+}
+.box h3 {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+}
+.class {
+  display: none;
+}
+footer{
+  width: 100vw;
+  height: 1000px;
+}
+@media (max-height:712px) {
+  .container{
+    position: relative;
+    bottom: 0px;
+    justify-content: space-between;
+  }
+  .moss{
+    opacity: .7;
+  }
+}
+@media  (max-width:1080px) {
+  nav{
+    width: 100%;
+  }
+  .left{
+    padding: 0px 20px;
+  }
+  .moon{
+    left:15%;
+  }
+  .moss img{
+    transform: translateY(60px);
+  }
+}
+@media (max-width:680px){
+  main{
+    height: 100vh;
+  }
+  .left ul{
+    display: none;
+  }
+  .moon{
+    left: 10%;
+    filter: blur(60%) opacity(60%);
+  }
+  .left svg{
+    display: block;
+    width: 20px;
+    padding: 5px;
+    color: rgb(244, 107, 144);
+    transition: all 300ms;
+  }
+  .left svg:active{
+    background-color: rgb(244, 107, 144);
+    color: white;
+    border-radius: 5px;
+  }
+  .moss, .moon{
+    opacity: 0.5;
+  }
+
+header{
+  width: 100%;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.head{
+  margin: 0;
+  position: static;
+}
+.head h1, h6{
+  text-align: center;
+}
+.head p{
+  text-shadow: 1px 1px black;
+}
+.moss{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  right: auto;
+}
+.moss img{
+  width: 400px;
+  height: 380px;
+}
+
+header button{
+  align-self: center;
+  margin-top: 40px;
+  scale: 1.3;
+  opacity: 0.9;
+  /* box-shadow: 1px 1px 10px 2px rgb(216, 145, 157); */
+}
+.container{
+  position: absolute;
+  bottom: 100px;
+}
+
+}
+@media (max-width:467px){
+.container{
+  display: none;
+}
+header{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  align-items: center;
+}
+.head{
+  transform: translateY(-100px);
+  width: 90%;
+  margin: auto;
+}
+}
