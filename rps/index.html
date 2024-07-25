@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Rock paper scissor</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <audio loop src="assets/byte-blast-8-bit-arcade-music-background-music-for-video-41-second-208778.mp3"></audio>
+    <main>
+      <nav class="flex">
+        <div class="left flex flex-default">
+          <img src="assets/svg/logo.svg" alt="" />
+          <h1>Rock paper scissor</h1>
+        </div>
+        <div class="right"><img src="assets/images/profile.jpg" alt="" /></div>
+      </nav>
+      <span class="profile hidden">
+        <h3 class="display-name">Prema</h3>
+        <h4 class="user-name">i.m.prema</h4>
+        <div class="divider"></div>
+        <h2 class="matches-won">Match won : 2</h2>
+        <h2 class="matches-lost">Match lost : 3</h2>
+        <div class="divider"></div>
+        <button class="sign-out"></button>
+      </span>
+      <div class="start-menu flex flex-default">
+        <div class="title">
+          <span class="text flex flex-default">
+            <img src="assets/images/custom/Rock.png" alt="" />
+            <img src="assets/images/custom/Paper.png" alt="" />
+            <img src="assets/images/custom/Scissors.png" alt="" />
+          </span>
+          <span id="button">
+            <button class="drop new-game">Start game</button>
+          </span>
+        </div>
+        <div class="image drop">
+          <img src="assets/images/paper.png" alt="" />
+        </div>
+      </div>
+      <div class="first-choose flex flex-default hidden">
+        <h1 class="drop">Choose one of them to start</h1>
+        <div class="container flex flex-default">
+          <div class="box drop" data-choice="1">
+            <img src="assets/images/rock.png" alt="" />
+          </div>
+          <div class="box drop" data-choice="2">
+            <img src="assets/images/paper.png" alt="" />
+          </div>
+          <div class="box drop" data-choice="3">
+            <img src="assets/images/scissor.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="rounds flex flex-default hidden">
+        <div class="space">
+          <div class="last-move block drop">
+            <img src="assets/images/paper.png" alt="" />
+          </div>
+          <div class="round block drop">Round : 1</div>
+          <div class="winner block drop">Winner : Computer</div>
+          <div class="choose flex flex-default">
+            <h1 class="block">Choose for next round</h1>
+            <div class="options">
+              <img
+                class="select drop"
+                data-choice="1"
+                src="assets/images/rock.png"
+                alt=""
+              />
+              <img
+                class="select drop"
+                data-choice="2"
+                src="assets/images/paper.png"
+                alt=""
+              />
+              <img
+                class="select drop"
+                data-choice="3"
+                src="assets/images/scissor.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <span class="scorecard flex flex-default">
+            <div class="loose drop">0</div>
+            <div class="draw drop">0</div>
+            <div class="win drop">0</div>
+          </span>
+          <button class="surrender drop">Surrender</button>
+        </div>
+      </div>
+      <div class="card-menu flex flex-default">
+        <div class="round-card drop flex flex-default card-hidden">
+            Winner : <p id="winner"> User</p> <img class="exit-0 drop" src="assets/svg/cancel.svg" alt="" />
+        </div>
+        <div class="card win-card drop flex flex-default card-hidden">
+          You won!!
+      <img class="exit exit-1  drop" src="assets/svg/cancel.svg" alt="" />
+        </div>
+        <div class="card loose-card drop flex flex-default card-hidden">
+          You lost!!
+      <img class="exit exit-2 drop" src="assets/svg/cancel.svg" alt="" />
+        </div>
+        <div class="card draw-card drop flex flex-default card-hidden">
+          Match Draw!!
+      <img class="exit exit-3 drop" src="assets/svg/cancel.svg" alt="" />
+        </div>
+        <div class="surrender-card drop flex flex-default card-hidden">
+          Surrendered!!
+      <img class=" exit-4 drop" src="assets/svg/cancel.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <script src="javascript/manager.js"></script>
+    <script src="javascript/global.js"></script>
+  </body>
+</html>

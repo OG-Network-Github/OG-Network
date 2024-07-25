@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <audio id="bg-music" src="assets/byte-blast-8-bit-arcade-music-background-music-for-video-41-second-208778.mp3" autoplay loop></audio>
+
+    <button id="toggle-music">Pause Music</button>
+
+<script>
+  const bgMusic = document.getElementById('bg-music');
+  const toggleButton = document.getElementById('toggle-music');
+
+  toggleButton.addEventListener('click', () => {
+    if (bgMusic.paused) {
+      bgMusic.play();
+      toggleButton.textContent = 'Pause Music';
+    } else {
+      bgMusic.pause();
+      toggleButton.textContent = 'Play Music';
+    }
+  });
+</script>
+</body>
+</html>
